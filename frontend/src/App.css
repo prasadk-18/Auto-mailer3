@@ -38,6 +38,7 @@ body {
   font-size: 16px;
   transition: all 0.2s;
   background-color: aliceblue;
+  color: #000;
 }
 
 .form input:focus {
