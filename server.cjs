@@ -37,8 +37,8 @@ app.post("/send-mail", async (req, res) => {
         <p style="font-size:16px; color:#333;">Thank you for joining our platform. We're excited to have you on board!</p>
 
         <div style="text-align:center; margin:20px 0;">
-          <p>Ekkada padithe akkada personal details ivvaku bro!!!
-        </p>
+          <p>Ekkada padithe akkada personal details ivvaku bro!!!</p>
+        </div>
       </div>
       `
     });
@@ -50,5 +50,6 @@ app.post("/send-mail", async (req, res) => {
   }
 });
 
-
-app.listen(5000, () => console.log("Server running on port 5000"));
+// REQUIRED CHANGE FOR RENDER👇
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
